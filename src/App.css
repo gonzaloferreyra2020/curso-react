@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+ padding: 0;
+}
+
+.fondo_principal{
+  background: #f5ebd2;
+}
+
+.cupones{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.fondo_rojo{
+  background: #d72300;
+}
+
+.fondo_footer{
+  background: #502314;
+}
