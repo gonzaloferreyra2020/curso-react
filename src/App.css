@@ -7,6 +7,9 @@
   background: #f5ebd2;
 }
 
+h2{
+  text-align: center;
+}
 .navbar-nav{
 margin-left: 60px;
 }
