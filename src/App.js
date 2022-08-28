@@ -1,18 +1,17 @@
 
 import './App.css';
-import Carrousel from './components/Carrousel';
-import Cupones from './components/Cupones';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import PromoApp from './components/PromoApp';
+import Carrousel from './components/Carrousel/Carrousel';
+import Cupones from './components/Cupones/Cupones';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import PromoApp from './components/PromoApp/PromoApp';
 
 function App() {
 
   
   return (
     <div className='fondo_principal'>
-      <Header />
-      <hr></hr>
+      <Navbar />
       <Carrousel />
       <Cupones />
       <PromoApp/>

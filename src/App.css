@@ -7,6 +7,14 @@
   background: #f5ebd2;
 }
 
+.navbar-nav{
+margin-left: 60px;
+}
+
+.cart{
+  margin-left: 60px;
+}
+
 .cupones{
   padding-top: 120px;
   padding-bottom: 120px;

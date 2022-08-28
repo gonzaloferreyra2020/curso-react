@@ -1,5 +1,5 @@
 import React from "react";
-import cel from "../images/celular.png";
+import cel from "../../images/celular.png";
 
 const PromoApp = () => {
     return(

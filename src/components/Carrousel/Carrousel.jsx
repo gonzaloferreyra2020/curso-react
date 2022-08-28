@@ -1,7 +1,7 @@
 import React from "react";
-import bannerStacker from "../images/stacker.png";
-import bannerVegetal from "../images/vegetal.png";
-import bannerDoble from "../images/burgerDoble.png";
+import bannerStacker from "../../images/stacker.png";
+import bannerVegetal from "../../images/vegetal.png";
+import bannerDoble from "../../images/burgerDoble.png";
 
 const   Carrousel = () =>{
     return(

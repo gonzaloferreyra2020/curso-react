@@ -35,6 +35,10 @@ const   Footer = () =>{
                         <li>Defensa de las y los consumidores</li>
                     </ul>
                 </div>
+                <hr />
+                <div className="col-md-12 ">
+                    <p>TM © 2021 Burger King Corporation. Todos los derechos reservados.</p>
+                </div>
             </div>
             
         </div>
