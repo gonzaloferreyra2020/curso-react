@@ -1,10 +1,20 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ItemListContainer = () =>{
+import {faSpinner} from '@fortawesome/free-solid-svg-icons';
+
+
+
+const ItemListContainer = (props) =>{
+
+  const greeting = props.greeting;
+
   return (
     <div>
-        <h2>ItemListContainer</h2>
+        <h2>{greeting}</h2>
+        <h3>Productos disponibles:</h3>
+        <h3><FontAwesomeIcon icon={faSpinner} /></h3>
     </div>
   )
 }

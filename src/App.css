@@ -7,16 +7,21 @@
   background: #f5ebd2;
 }
 
+.navbar{
+  background: #f5ebd2;;
+}
+.container-navbar{
+  width: 60%;
+ 
+}
 h2{
   text-align: center;
 }
-.navbar-nav{
-margin-left: 60px;
+
+h3{
+  text-align: center;
 }
 
-.cart{
-  margin-left: 60px;
-}
 
 .cupones{
   padding-top: 120px;

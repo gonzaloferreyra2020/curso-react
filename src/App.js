@@ -7,13 +7,14 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Navbar from './components/Navbar/Navbar';
 import PromoApp from './components/PromoApp/PromoApp';
 
+
 function App() {
 
   
   return (
     <div className='fondo_principal'>
       <Navbar />
-      <ItemListContainer/>
+      <ItemListContainer greeting="Saludos y bienvenidos"/>
       <Carrousel />
       <Cupones />
       <PromoApp/>
