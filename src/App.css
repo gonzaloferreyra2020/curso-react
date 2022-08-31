@@ -8,18 +8,25 @@
 }
 
 .navbar{
-  background: #f5ebd2;;
+  background: #f5ebd2;
 }
 .container-navbar{
   width: 60%;
- 
 }
+
+.color_navbar{
+  color: #4f2414;
+  font-weight: bold;
+}
+
 h2{
   text-align: center;
+  color: #4f2414;
 }
 
 h3{
   text-align: center;
+  color: #4f2414;
 }
 
 

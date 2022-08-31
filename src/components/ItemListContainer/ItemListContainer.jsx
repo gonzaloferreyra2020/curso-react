@@ -8,7 +8,9 @@ import {faSpinner} from '@fortawesome/free-solid-svg-icons';
 
 const ItemListContainer = (props) =>{
 
-  const greeting = props.greeting;
+  const{
+    greeting
+  }=props;
 
   return (
     <div>
