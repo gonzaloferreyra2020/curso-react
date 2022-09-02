@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../../images/Burger-King-Logo-CMS.png";
 import CartWidget from "./CartWidget/CartWidget";
 
-
 const   Navbar = () =>{
     return(
         <nav className="navbar navbar-expand-lg  ">
