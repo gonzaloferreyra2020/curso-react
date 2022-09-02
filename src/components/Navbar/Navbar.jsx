@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../images/Burger-King-Logo-CMS.png";
-import CartWidget from "./CartWidget/CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 
 const   Navbar = () =>{
     return(
@@ -35,5 +35,4 @@ const   Navbar = () =>{
         </nav>
     )
 }
-
 export default Navbar;

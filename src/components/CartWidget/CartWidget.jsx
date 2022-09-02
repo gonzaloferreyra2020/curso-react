@@ -1,5 +1,5 @@
 import React from 'react';
-import cart from "../../../images/carrito.png";
+import cart from "../../images/carrito.png";
 
  const CartWidget = () => {
   return (
@@ -9,6 +9,5 @@ import cart from "../../../images/carrito.png";
             </div>
   )
 }
-
 export default CartWidget;
 
