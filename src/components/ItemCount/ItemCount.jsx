@@ -26,7 +26,7 @@ const ItemCount = (props) =>{
         <div className="text-center">
             <div className="d-grid gap-2 d-md-flex justify-content-md-center">
                 <button disabled = {count <= 1}  onClick = {()=>{restarCantidad(count-1)}} className="btn btn-primary" type="button">-</button>
-                <input type="text" value={count} className="text-center" ></input>
+                <input type="text" value={count} onChange={""} className="text-center" ></input>
                 <button disabled = {count >= itemStock} onClick={()=>{incrementarCantidad(count+1)}} className="btn btn-primary" type="button">+</button>
             </div>
             <div className="d-grid gap-2 d-md-flex justify-content-md-center pt-3">
