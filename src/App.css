@@ -48,6 +48,12 @@ p{
   background-color: #612f1d;
   border-color: #612f1d;
 }
+.btn:hover{
+  background-color: #d43e08;
+}
+.btn:disabled{
+  background-color: #d43e08;
+}
 
 
 .btn-outline-primary:disabled {
