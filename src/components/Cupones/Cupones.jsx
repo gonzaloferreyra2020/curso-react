@@ -3,7 +3,6 @@ import cupon1 from "../../images/fcb65159d8487f97f3485d53a0d85a2f.jpeg";
 import cupon2 from "../../images/1933f73b788eee2d2c3441d547b4975c.jpeg";
 import cupon3 from "../../images/04f35bb95f283929c007f7a35d1b9624.jpeg";
 
-
 const   Cupones = () =>{
     return(
         <div className="container cupones">
@@ -22,5 +21,4 @@ const   Cupones = () =>{
         </div>
     )
 }
-
 export default Cupones;

@@ -1,9 +1,8 @@
 import React from "react";
 
-
 const   Footer = () =>{
     return(
-        <div className="fondo_footer">
+    <div className="fondo_footer">
 
         <div className="container text-white">
             <div className="row">
@@ -40,10 +39,8 @@ const   Footer = () =>{
                     <p>TM © 2021 Burger King Corporation. Todos los derechos reservados.</p>
                 </div>
             </div>
-            
         </div>
-      
-        </div>
+    </div>
     )
 }
 

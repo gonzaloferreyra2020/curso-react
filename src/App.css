@@ -19,6 +19,9 @@
   font-weight: bold;
 }
 
+h1{
+  color: #4f2414;
+}
 h2{
   text-align: center;
   color: #4f2414;
@@ -29,6 +32,31 @@ h3{
   color: #4f2414;
 }
 
+h4{
+  color: #4f2414;
+}
+
+h5{
+  color: #4f2414;
+}
+
+p{
+  color: #4f2414;
+}
+
+.btn{
+  background-color: #612f1d;
+  border-color: #612f1d;
+}
+
+
+.btn-outline-primary:disabled {
+    color: #7cc;
+    background-color: transparent
+}
+.card{
+  margin: 20px;
+}
 
 .cupones{
   padding-top: 120px;
