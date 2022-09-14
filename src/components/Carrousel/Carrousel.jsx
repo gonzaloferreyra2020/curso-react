@@ -3,6 +3,7 @@ import bannerStacker from "../../images/stacker.png";
 import bannerVegetal from "../../images/vegetal.png";
 import bannerDoble from "../../images/burgerDoble.png";
 import Cupones from "../Cupones/Cupones";
+import PromoApp from "../PromoApp/PromoApp";
 
 const   Carrousel = () =>{
     return(
@@ -28,9 +29,11 @@ const   Carrousel = () =>{
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <Cupones/>
+          <div>
+            <Cupones/>
+            <PromoApp/>
+          </div>
         </div>
-        
     )
 }
 export default Carrousel;

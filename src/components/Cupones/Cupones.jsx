@@ -6,6 +6,7 @@ import cupon3 from "../../images/04f35bb95f283929c007f7a35d1b9624.jpeg";
 const   Cupones = () =>{
     return(
         <div className="container cupones">
+            <h2>Cupones</h2>
             <div className="row">
                 <div className="col-md-4">
                     <img src={cupon1} alt="cupon 1" className="img-fluid rounded"/>
@@ -15,7 +16,6 @@ const   Cupones = () =>{
                 </div>
                 <div className="col-md-4">
                     <img src={cupon3} alt="cupon 3" className="img-fluid rounded"/>
-                
                 </div>
             </div>
         </div>

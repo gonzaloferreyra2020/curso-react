@@ -26,7 +26,9 @@ const ItemListContainer = (props) =>{
           <ItemCount stock={5} initial={1} onAdd={0}/>
         </div>
         <h3>Productos disponibles:</h3>
+        
         <ItemList items={items}/>
+        
     </div>
   )
 }

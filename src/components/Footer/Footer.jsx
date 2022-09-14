@@ -7,7 +7,7 @@ const   Footer = () =>{
         <div className="container text-white">
             <div className="row">
                 <div className="col-md-4">
-                    <h3>BURGER KING</h3>
+                    <h3 className="text-light">BURGER KING</h3>
                 </div>
                 <div className="col-md-2">
                     <h4>Info BK</h4>
@@ -36,7 +36,7 @@ const   Footer = () =>{
                 </div>
                 <hr />
                 <div className="col-md-12 ">
-                    <p>TM © 2021 Burger King Corporation. Todos los derechos reservados.</p>
+                    <p className="text-light">TM © 2021 Burger King Corporation. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
