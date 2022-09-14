@@ -16,7 +16,7 @@ const ItemDetail = ({item})=>{
                     <h2 className="card-title">Precio: ${item.price}</h2>
                     <p className="card-text text-center"><small className="text-muted">Stock: {item.stock}</small></p>
                     </div>
-                    <ItemCount stock={item.stock} initial={1} onAdd={0}/>
+                    <ItemCount stock={5} initial={1} onAdd={0}/>
                 </div>
             </div>
         </div>

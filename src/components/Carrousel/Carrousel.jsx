@@ -5,7 +5,7 @@ import bannerDoble from "../../images/burgerDoble.png";
 
 const   Carrousel = () =>{
     return(
-        <div classNameName="text-center">
+        <div className="text-center">
           <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">

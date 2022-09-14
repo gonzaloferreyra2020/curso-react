@@ -15,8 +15,18 @@
 }
 
 .color_navbar{
-  color: #4f2414;
   font-weight: bold;
+  caret-color: #7cc;
+}
+
+.itemCount{
+  padding: 20px;
+}
+
+
+.active{
+  color: #7cc;
+  background-color: #7cc;
 }
 
 h1{
@@ -54,7 +64,6 @@ p{
 .btn:disabled{
   background-color: #d43e08;
 }
-
 
 .btn-outline-primary:disabled {
     color: #7cc;

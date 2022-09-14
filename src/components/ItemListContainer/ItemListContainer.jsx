@@ -22,7 +22,10 @@ const ItemListContainer = (props) =>{
     <div>
         <h2>{greeting}</h2>
         <h3><i className="fa-solid fa-spinner"></i></h3>
-        <ItemCount stock={5} initial={1} onAdd={0}/>
+        <div className='itemCount'>
+          <ItemCount stock={5} initial={1} onAdd={0}/>
+        </div>
+        
         <h3>Productos disponibles:</h3>
         <ItemList items={items}/>
     </div>
