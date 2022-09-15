@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/Burger-King-Logo-CMS.png";
 import CartWidget from "../CartWidget/CartWidget";
-import Cupones from "../Cupones/Cupones";
 
 const   Navbar = () =>{
     return(

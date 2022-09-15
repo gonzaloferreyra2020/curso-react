@@ -79,14 +79,3 @@ p{
 .fondo_footer{
   background: #502314;
 }
-
-.estilo-productos{
-  display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #243746;
-    color: white;
-    width: 100%;
-    height: auto;
-}

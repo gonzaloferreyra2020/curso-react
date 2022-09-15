@@ -1,5 +1,4 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
 import { useState,useEffect } from "react";
 import products from '../../json/json.js';
 import ItemList from "../ItemList/ItemList";
@@ -19,16 +18,12 @@ const ItemListContainer = (props) =>{
     });
   });
   return (
-    <div>
+    <div className='container'>
         <h2>{greeting}</h2>
-        <h3><i className="fa-solid fa-spinner"></i></h3>
-        <div className='itemCount'>
-          <ItemCount stock={5} initial={1} onAdd={0}/>
-        </div>
         <h3>Productos disponibles:</h3>
-        
-        <ItemList items={items}/>
-        
+        <div className="row">
+          <ItemList items={items}/>
+        </div>
     </div>
   )
 }

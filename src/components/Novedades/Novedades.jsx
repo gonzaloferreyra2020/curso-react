@@ -12,36 +12,36 @@ const Novedades = ()=>{
             <div className="row">
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card " >
-                        <img src={nov1} className="card-img-top" alt="image-card"/>
+                        <img src={nov1} className="card-img-top" alt="novedad-1"/>
                     </div>
                 </div>
 
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card" >
-                        <img src={nov2} className="card-img-top" alt="image-card"/>
+                        <img src={nov2} className="card-img-top" alt="novedad-2"/>
                     </div>
                 </div>
 
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card" >
-                        <img src={nov3} className="card-img-top" alt="image-card"/>
+                        <img src={nov3} className="card-img-top" alt="novedad-3"/>
                     </div>
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card " >
-                        <img src={nov4} className="card-img-top" alt="image-card"/>
+                        <img src={nov4} className="card-img-top" alt="inovedad-4"/>
                     </div>
                 </div>
 
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card" >
-                        <img src={nov5} className="card-img-top" alt="image-card"/>
+                        <img src={nov5} className="card-img-top" alt="novedad-5"/>
                     </div>
                 </div>
 
                 <div className="col-sm-6 col-md-4 col-lg-4 mt-4">
                     <div className="card" >
-                        <img src={nov6} className="card-img-top" alt="image-card"/>
+                        <img src={nov6} className="card-img-top" alt="novedad-6"/>
                     </div>
                 </div>
             </div>
