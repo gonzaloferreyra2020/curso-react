@@ -7,6 +7,7 @@ const products = [
         stock:50,
         desc:"100% real no fake.",
         category:"",
+        text:"Ahora nuestra Whopper es sin conservantes, colorantes ni saborizantes artificiales. Con todo el sabor a la parrilla, jugosos tomates, lechuga recién cortada, mayonesa, pepinos y cebollas en rodajas, sobre un suave pan con semillitas de ajonjolí. Pedila así: Whopper y nada más que Whopper, pero con papas y gaseosa ;)",
     },
     {
         id:2,
@@ -14,8 +15,9 @@ const products = [
         image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_WHOPER-DOBLE-_1200X800_020822.png",
         price:1900,
         stock:50,
-        desc:"100% real no fake.",
+        desc:"2 veces más perfecta",
         category:"",
+        text:"Disfruta el doble con 2 carnes a la parrilla, pan, salsa ciboulette, ketchup, cebolla, tomate, pepinos y lechuga.",
     },
     {
         id:3,
@@ -23,8 +25,9 @@ const products = [
         image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Stacker-Triple.png",
         price:2200,
         stock:20,
-        desc:"100% real no fake.",
+        desc:"Manijeá fuerte",
         category:"",
+        text:"3 carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta. Muy potente.",
     },
     {
         id:4,
@@ -32,8 +35,9 @@ const products = [
         image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Hamburguesa-con-Queso.png",
         price:900,
         stock:80,
-        desc:"100% real no fake.",
+        desc:"Todo es mejor con queso",
         category:"",
+        text:"Carne a la parrilla, pan, queso cheddar, mostaza y ketchup. Apta para sumarle más queso ;)",
     },
     {
         id:5,
@@ -41,8 +45,9 @@ const products = [
         image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/2021/04/stacker-quintuple.png",
         price:2950,
         stock:15,
-        desc:"100% real no fake.",
+        desc:"Hecha por manijas, para manijas.",
         category:"",
+        text:"5 carnes a la parri, salsa stacker, pan, queso cheddar, panceta. Solo para expertos",
     },
     {
         id:6,
@@ -50,8 +55,9 @@ const products = [
         image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Doble-Jamon-y-Queso-XL.png",
         price:1600,
         stock:40,
-        desc:"100% real no fake.",
+        desc:"Combinación perfecta.",
         category:"",
+        text:"Disfruta de esta maravilla hecha con 2 carnes a la parrilla + jamón y queso.",
     }
 ];
 export default products;

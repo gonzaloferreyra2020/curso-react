@@ -14,14 +14,15 @@ function App() {
     <div className='fondo_principal'>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/home" element={<Carrousel/>}/>
-          <Route path="/cart" element={<CartWidget />} />
-          <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
-          <Route path="/productos" element={<ItemListContainer/>}/>
-          <Route path="/cupones" element={<Cupones/>}/>
-          <Route path="/novedades" element={<Novedades/>}/>
-        </Routes>
+          <Routes>
+            <Route path="/home" element={<Carrousel/>}/>
+            <Route path="/cart" element={<CartWidget />} />
+            <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
+            <Route path="/productos" element={<ItemListContainer/>}/>
+            <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
+            <Route path="/cupones" element={<Cupones/>}/>
+            <Route path="/novedades" element={<Novedades/>}/>
+          </Routes>
         <Footer />
       </BrowserRouter> 
     </div>
