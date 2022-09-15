@@ -7,18 +7,17 @@ import { useParams } from 'react-router-dom';
 const ItemListContainer = (props) =>{
   const{greeting}=props;
   const [items, setItems] = useState([]);
-  const {categoriaId}=useParams;
-  useEffect(() => {
-    const promesa = new Promise((resolve,reject) =>{
-      setTimeout(()=>{
-        resolve(products)
-      },2000);
-    });
-    promesa.then((respuesta)=>{
-      setItems(respuesta);
-      console.log(respuesta);
-    });
-  });
+    useEffect(() => {
+      const getItems = new Promise(resolve => {
+        setTimeout(() => {
+          resolve(products);
+        }, 1000);
+      });
+      getItems.then((data)=>{
+        setItems(data)
+      });
+    },[]);
+  
   return (
     <div className='container'>
         <h2>{greeting}</h2>

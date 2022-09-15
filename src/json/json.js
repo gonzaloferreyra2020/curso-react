@@ -6,7 +6,7 @@ const products = [
         price:1200,
         stock:50,
         desc:"100% real no fake.",
-        category:"",
+        category:"carne",
         text:"Ahora nuestra Whopper es sin conservantes, colorantes ni saborizantes artificiales. Con todo el sabor a la parrilla, jugosos tomates, lechuga recién cortada, mayonesa, pepinos y cebollas en rodajas, sobre un suave pan con semillitas de ajonjolí. Pedila así: Whopper y nada más que Whopper, pero con papas y gaseosa ;)",
     },
     {
@@ -16,7 +16,7 @@ const products = [
         price:1900,
         stock:50,
         desc:"2 veces más perfecta",
-        category:"",
+        category:"carne",
         text:"Disfruta el doble con 2 carnes a la parrilla, pan, salsa ciboulette, ketchup, cebolla, tomate, pepinos y lechuga.",
     },
     {
@@ -26,7 +26,7 @@ const products = [
         price:2200,
         stock:20,
         desc:"Manijeá fuerte",
-        category:"",
+        category:"carne",
         text:"3 carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta. Muy potente.",
     },
     {
@@ -36,7 +36,7 @@ const products = [
         price:900,
         stock:80,
         desc:"Todo es mejor con queso",
-        category:"",
+        category:"carne",
         text:"Carne a la parrilla, pan, queso cheddar, mostaza y ketchup. Apta para sumarle más queso ;)",
     },
     {
@@ -46,7 +46,7 @@ const products = [
         price:2950,
         stock:15,
         desc:"Hecha por manijas, para manijas.",
-        category:"",
+        category:"carne",
         text:"5 carnes a la parri, salsa stacker, pan, queso cheddar, panceta. Solo para expertos",
     },
     {
@@ -56,7 +56,7 @@ const products = [
         price:1600,
         stock:40,
         desc:"Combinación perfecta.",
-        category:"",
+        category:"pollo",
         text:"Disfruta de esta maravilla hecha con 2 carnes a la parrilla + jamón y queso.",
     }
 ];
