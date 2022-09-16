@@ -17,9 +17,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Carrousel/>}/>
             <Route path="/cart" element={<CartWidget />} />
-            <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route path="/productos" element={<ItemListContainer/>}/>
-            <Route path='/category/:id' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path="/cupones" element={<Cupones/>}/>
             <Route path="/novedades" element={<Novedades/>}/>
           </Routes>

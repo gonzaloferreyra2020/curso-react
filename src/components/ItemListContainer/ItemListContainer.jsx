@@ -2,8 +2,6 @@ import React from 'react';
 import { useState,useEffect } from "react";
 import products from '../../json/json.js';
 import ItemList from "../ItemList/ItemList";
-import { useParams } from 'react-router-dom';
-
 const ItemListContainer = (props) =>{
   const{greeting}=props;
   const [items, setItems] = useState([]);
