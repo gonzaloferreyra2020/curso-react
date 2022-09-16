@@ -1,10 +1,9 @@
 import React from "react";
 import Item from "../Item/Item";
 
-const ItemList = (props)=>{
-    const{items}=props;
+const ItemList = ({items})=>{
     return(
-        items.map(product => <Item key={product.id} nombre={product.title} precio={product.price} imagen={product.image} stock={product.stock}/>)
+        items.map(product => <Item key={product.id} info={product}/>)
     )
 }
 export default ItemList;

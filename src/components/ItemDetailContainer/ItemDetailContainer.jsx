@@ -15,7 +15,6 @@ const ItemDetailContainer = ()=>{
         },2000);
       });
       getItem.then(res => setItem(res.find(product => product.id===parseInt(itemId))));
-      console.log(products);
     },[itemId]);
     return(
         <ItemDetail item={item}/>
