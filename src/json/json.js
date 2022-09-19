@@ -58,6 +58,36 @@ const products = [
         desc:"Combinación perfecta.",
         category:"pollo",
         text:"Disfruta de esta maravilla hecha con 2 carnes a la parrilla + jamón y queso.",
-    }
+    },
+    {
+        id:7,
+        title:"Whopper® Chimiburga de Pollo",
+        image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Chimiburga_Pollo.png",
+        price:2600,
+        stock:16,
+        desc:"Sale a la parri y con chimi.",
+        category:"pollo",
+        text:"Sacate la manija y disfrutá: pan, pollo crispy, tomate, cebolla, lechuga, mayonesa y claro, CHIMICHURRI.",
+    }, 
+    {
+        id:8,
+        title:"King vegetal",
+        image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/King-de-Pollo_2604.png",
+        price:2400,
+        stock:7,
+        desc:"Sorprendentemente igual al King de pollo, pero VEGETAL",
+        category:"vegetal",
+        text:"milanesa NotCo, pan, lechuga y mayonesa.",
+    },
+    {
+        id:9,
+        title:"Whopper vegetal",
+        image:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/WhopperVegetal_2604.png",
+        price:1900,
+        stock:10,
+        desc:"Sale a la parri",
+        category:"vegetal",
+        text:"pan, medallón vegetal, lechuga, tomate, cebolla, pepinillos, ketchup y mayonesa.",
+    },
 ];
 export default products;

@@ -14,15 +14,15 @@ const   Footer = () =>{
                     <h4>Info BK</h4>
                     <ul>
                         <li className="nav-item">
-                            <NavLink to="productos" className="nav-link active">Menú</NavLink> </li>
+                            <NavLink to="products" className="nav-link active">Menú</NavLink> </li>
                         <li>
-                            <NavLink to="productos" className="nav-link active">Restaurantes</NavLink> 
+                            <NavLink to="" className="nav-link active">Home</NavLink> 
                         </li>
                         <li>
-                            <NavLink to="cupones" className="nav-link active">Cupones</NavLink>
+                            <NavLink to="coupons" className="nav-link active">Cupones</NavLink>
                         </li>
                         <li>
-                            <NavLink to="novedades" className="nav-link active">Novedades</NavLink>
+                            <NavLink to="news" className="nav-link active">Novedades</NavLink>
                         </li>
                     </ul>
                 </div>

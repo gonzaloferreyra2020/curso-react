@@ -18,10 +18,10 @@ function App() {
             <Route path="/" element={<Carrousel/>}/>
             <Route path="/cart" element={<CartWidget />} />
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/productos" element={<ItemListContainer/>}/>
+            <Route path="/products" element={<ItemListContainer/>}/> 
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path="/cupones" element={<Cupones/>}/>
-            <Route path="/novedades" element={<Novedades/>}/>
+            <Route path="/coupons" element={<Cupones/>}/>
+            <Route path="/news" element={<Novedades/>}/>
           </Routes>
         <Footer />
       </BrowserRouter> 
