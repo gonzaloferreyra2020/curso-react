@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const ItemCount = (props) =>{
     const {stock,initial,onAdd}=props;
-    const [count, setCount] = useState(initial);
+    const [count, setCount] = useState(parseInt(initial));
     const [itemStock,setItemStock] = useState(stock);
     const [itemAdd, setItemAdd] = useState(onAdd);
     const restarCantidad = (count)=>{

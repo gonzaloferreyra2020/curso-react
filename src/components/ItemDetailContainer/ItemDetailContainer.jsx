@@ -11,7 +11,6 @@ const ItemDetailContainer = ()=>{
       const getItem = new Promise(resolve => {
         setTimeout(()=>{
             resolve(products)
-            
         },2000);
       });
       getItem.then(res => setItem(res.find(data => data.id===parseInt(itemId))));
