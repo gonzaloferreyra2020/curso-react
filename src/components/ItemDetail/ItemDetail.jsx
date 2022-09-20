@@ -3,15 +3,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 
-
 const ItemDetail = ({item})=>{
-    const [counter, setCounter] = useState(0);
+    const [quantityToAdd, setQuantityToAdd] = useState(0);
 
-    const onAdd = (counter) => {//En el Desafío de Eventos había que crear esta función donde solamente iba a recibir la cantidad de Items. No hace falta pasar por parámetro el Item, porque ya está ese valor en este Componente!
-        setCounter(counter); //Cuando se agrega un nuevo Producto, se actualiza el Contador para que desaparezca el ItemCounter y aparezca el botón "Ir Al Carrito"
+    const onAdd = (quantityToAdd) => {//En el Desafío de Eventos había que crear esta función donde solamente iba a recibir la cantidad de Items. No hace falta pasar por parámetro el Item, porque ya está ese valor en este Componente!
+        setQuantityToAdd(quantityToAdd); //Cuando se agrega un nuevo Producto, se actualiza el Contador para que desaparezca el ItemCounter y aparezca el botón "Ir Al Carrito"
         
     }
-
     return(
         <div className="container">
             <div className="card mb-3" >
@@ -27,8 +25,10 @@ const ItemDetail = ({item})=>{
                             <h2 className="card-title">Precio: ${item.price}</h2>
                             <p className="card-text text-center"><small className="text-muted">Stock: {item.stock}</small></p>
                         </div>
-                        {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> 
-                        : <Link to={"/cart"} className="btn">Ir al Carrito</Link>}
+                        {
+                        quantityToAdd === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> 
+                        : <Link to={"/cart"} className="btn">Ir al Carrito</Link>
+                        }
                     </div>
                 </div>
             </div>
