@@ -6,8 +6,8 @@ import ItemCount from "../ItemCount/ItemCount";
 const ItemDetail = ({item})=>{
     const [quantityToAdd, setQuantityToAdd] = useState(0);
 
-    const onAdd = (quantityToAdd) => {//En el Desafío de Eventos había que crear esta función donde solamente iba a recibir la cantidad de Items. No hace falta pasar por parámetro el Item, porque ya está ese valor en este Componente!
-        setQuantityToAdd(quantityToAdd); //Cuando se agrega un nuevo Producto, se actualiza el Contador para que desaparezca el ItemCounter y aparezca el botón "Ir Al Carrito"
+    const onAdd = (quantityToAdd) => {
+        setQuantityToAdd(quantityToAdd); 
         
     }
     return(

@@ -8,23 +8,27 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import CartWidget from './components/CartWidget/CartWidget';
 import Novedades from './components/Novedades/Novedades';
 import Cupones from './components/Cupones/Cupones';
+import Provider from './components/CartContext/CartContext';
 
 function App() {  
   return (
     <div className='fondo_principal'>
-      <BrowserRouter>
-        <Navbar />
-          <Routes>
-            <Route path="/" element={<Carrousel/>}/>
-            <Route path="/cart" element={<CartWidget />} />
-            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/products" element={<ItemListContainer/>}/> 
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path="/coupons" element={<Cupones/>}/>
-            <Route path="/news" element={<Novedades/>}/>
-          </Routes>
-        <Footer />
-      </BrowserRouter> 
+      <Provider>
+        <BrowserRouter>
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<Carrousel/>}/>
+              <Route path="/cart" element={<CartWidget />} />
+              <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+              <Route path="/products" element={<ItemListContainer/>}/> 
+              <Route path='/category/:categoryId' element={<ItemListContainer />} />
+              <Route path="/coupons" element={<Cupones/>}/>
+              <Route path="/news" element={<Novedades/>}/>
+            </Routes>
+          <Footer />
+        </BrowserRouter> 
+      </Provider>
+      
     </div>
   );
 }
