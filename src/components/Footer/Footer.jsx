@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 const   Footer = () =>{
     return(
     <div className="fondo_footer">
-
         <div className="container text-white">
             <div className="row">
                 <div className="col-md-4">
@@ -51,5 +50,4 @@ const   Footer = () =>{
     </div>
     )
 }
-
 export default Footer;

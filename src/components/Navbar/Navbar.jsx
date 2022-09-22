@@ -15,7 +15,7 @@ const   Navbar = () =>{
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown color_navbar">
                             <NavLink className="nav-link dropdown-toggle color_navbar" to="category" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</NavLink>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                                 <li><NavLink className="dropdown-item color_navbar" to="category/carne">Carne</NavLink></li>
                                 <li><NavLink className="dropdown-item color_navbar" to="category/pollo">Pollo</NavLink></li>
                                 <li><NavLink className="dropdown-item color_navbar" to="category/vegetal">Vegetal</NavLink></li>
