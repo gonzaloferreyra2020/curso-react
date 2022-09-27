@@ -32,7 +32,7 @@ const Provider = ({children}) => {
     }
 
     const cartSuma = () => {
-        return cart.reduce((total, item) => total+=item.cantidad*item.precio, 0);
+        return cart.reduce((total, item) => total+=item.cantidad*item.price, 0);
     }
 
     return (
