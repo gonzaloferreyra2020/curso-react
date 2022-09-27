@@ -6,7 +6,6 @@ import trash from '../../images/cesto.png';
 
 const Cart = () => {
     const {cart, removeItem, clear, cartTotal, cartSuma} = useContext(CartContext);
-
     return (
         <div className="container">
             {cartTotal() > 0 ?
@@ -45,5 +44,4 @@ const Cart = () => {
         </div>
     )
 }
-
 export default Cart;

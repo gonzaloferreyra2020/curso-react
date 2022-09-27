@@ -5,10 +5,7 @@ import trash from '../../images/cesto.png';
 import { CartContext } from "../CartContext/CartContext";
 
 const CartWidget = () => {
-    const {cartTotal, clear} = useContext(CartContext); //Importé las funciones carTotal y Clear.
-    //Notese que estoy poniendo la función sin () => {}, porque quiero que se ejecute todo el tiempo.
-    //En cambio, en el botón Vaciar Carrito. Si estoy estoy poniendo la función () => {clear()}. Porque solamente se disparará esa función cuando haga click sobre el botón.
-
+    const {cartTotal, clear} = useContext(CartContext); 
     return (
         <div>
             <button type="button" className="btn fondo_naranja position-relative me-1" title="Vaciar Carrito" onClick={()=> {clear()}}>
@@ -23,6 +20,5 @@ const CartWidget = () => {
         </div>
     )
 }
-
 export default CartWidget;
 
