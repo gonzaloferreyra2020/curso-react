@@ -31,10 +31,9 @@ const   Navbar = () =>{
                             <NavLink className="nav-link  color_navbar"  to="news">Novedades</NavLink>
                         </li>
                     </ul>
+                    
                 </div>
-                <div>
-                    <CartWidget/>
-                </div>
+                <div><CartWidget/></div>
             </div>
         </nav>
     )

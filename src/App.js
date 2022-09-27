@@ -5,10 +5,10 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import CartWidget from './components/CartWidget/CartWidget';
 import Novedades from './components/Novedades/Novedades';
 import Cupones from './components/Cupones/Cupones';
 import Provider from './components/CartContext/CartContext';
+import Cart from './components/Cart/Cart';
 
 function App() {  
   return (
@@ -18,7 +18,7 @@ function App() {
           <Navbar />
             <Routes>
               <Route path="/" element={<Carrousel/>}/>
-              <Route path="/cart" element={<CartWidget />} />
+              <Route path="/cart" element={<Cart/>} />
               <Route path="/item/:itemId" element={<ItemDetailContainer />} />
               <Route path="/products" element={<ItemListContainer/>}/> 
               <Route path='/category/:categoryId' element={<ItemListContainer />} />
@@ -28,7 +28,6 @@ function App() {
           <Footer />
         </BrowserRouter> 
       </Provider>
-      
     </div>
   );
 }

@@ -35,7 +35,7 @@ const ItemCount = (props) =>{
             <div className="d-grid gap-2 d-md-flex justify-content-md-center pt-3">
                 <button disabled = {count > itemStock} onChange={()=>{}} onClick={()=>agregarProductos()} type="button" className="btn btn-primary ">Agregar al carrito</button>
             </div>
-            <p>Productos seleccionados: {onAdd}</p>
+            <p>Productos seleccionados: {count}</p>
         </div>
     )
 }
