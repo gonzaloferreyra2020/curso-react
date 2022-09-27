@@ -21,10 +21,10 @@ const Cart = () => {
                         </tr>
                         {cart.map(item => (
                             <tr key={item.id}>
-                                <td className="text-start"><img src={"images/" + item.imagen} alt={item.nombre} title={item.nombre} width="120" /></td>
-                                <td className="text-start align-middle">{item.nombre}</td>
-                                <td className="text-end align-middle">{item.cantidad} x ${item.precio}</td>
-                                <td className="text-end align-middle">${item.cantidad * item.precio}</td>
+                                <td className="text-start"><img src={"" + item.image} alt={item.image} title={item.title} width="120" /></td>
+                                <td className="text-start align-middle">{item.title}</td>
+                                <td className="text-end align-middle">{item.cantidad} x ${item.price}</td>
+                                <td className="text-end align-middle">${item.cantidad * item.price}</td>
                                 <td className="text-end align-middle">
                                     <Link onClick={() => {removeItem(item.id)}}><img src={trash} alt="Eliminar Producto" title="Eliminar Producto" width="24" /></Link>
                                 </td>
