@@ -20,7 +20,7 @@ const Cart = () => {
                         </tr>
                         {cart.map(item => (
                             <tr key={item.id}>
-                                <td className="text-start"><img src={"" + item.image} alt={item.image} title={item.title} width="120" /></td>
+                                <td className="text-start"><img src={item.image} alt={item.image} title={item.title} width="120" /></td>
                                 <td className="text-start align-middle">{item.title}</td>
                                 <td className="text-end align-middle">{item.cantidad} x ${item.price}</td>
                                 <td className="text-end align-middle">${item.cantidad * item.price}</td>
