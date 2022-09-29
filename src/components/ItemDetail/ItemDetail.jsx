@@ -18,7 +18,7 @@ const ItemDetail = ({item})=>{
                 <h1 className=" text-center"><b>{item.title}</b></h1>
                 <div className="row g-0">
                     <div className="col-md-4">
-                        <img src={item.image}className="img-fluid rounded-start" alt="imagen"/>
+                        <img src={item.image}className="img-fluid rounded-start" alt='item'/>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
