@@ -3,25 +3,24 @@ import { useState,useEffect } from "react";
 import products from '../../json/json.js';
 import ItemList from "../ItemList/ItemList";
 import { useParams } from 'react-router-dom';
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
+import Loading from '../Loading/Loading.jsx';
+
 const ItemListContainer = (props) =>{
   const{greeting}=props;
   const [items, setItems] = useState([]);
   const{categoryId}=useParams();
+  const[loading,setLoading] = useState(true);
     useEffect(() => {
-      const getItems = new Promise(resolve => {
-        setTimeout(() => {
-          resolve(products);
-        }, 1000);
-      });
-      if (categoryId) {
-        getItems.then(data=>
-          setItems(data.filter(product=>product.category===categoryId)))
-      }else{
-        getItems.then(data=>
-          setItems(data)
-        );
-      }
-      
+      const db = getFirestore();
+      const itemsCollection = collection(db, "curso-react");
+        const queryItems = categoryId ? query(itemsCollection, where("categoria", "==", categoryId)) : itemsCollection;
+        getDocs(queryItems).then((snapShot) => {
+            if (snapShot.size > 0) {
+                setItems(snapShot.docs.map(item => ({id:item.id, ...item.data()})));
+                setLoading(false);
+            }
+        });
     },[categoryId]);
   
   return (
@@ -29,7 +28,7 @@ const ItemListContainer = (props) =>{
         <h2>{greeting}</h2>
         <h3>Productos disponibles:</h3>
         <div className="row">
-          <ItemList items={items}/>
+          { loading ? <Loading/> : <ItemList items={items}/> }
         </div>
     </div>
   )
