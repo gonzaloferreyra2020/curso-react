@@ -9,6 +9,7 @@ import Novedades from './components/Novedades/Novedades';
 import Cupones from './components/Cupones/Cupones';
 import Provider from './components/CartContext/CartContext';
 import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {  
   return (
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Carrousel/>}/>
               <Route path="/cart" element={<Cart/>} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/item/:itemId" element={<ItemDetailContainer />} />
               <Route path="/products" element={<ItemListContainer/>}/> 
               <Route path='/category/:categoryId' element={<ItemListContainer />} />
