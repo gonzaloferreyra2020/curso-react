@@ -1,22 +1,29 @@
 import React from "react";
-import products from "../../json/json";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Loading from '../Loading/Loading.jsx';
+import { getFirestore, doc, getDoc} from "firebase/firestore";
 
-const ItemDetailContainer = ()=>{
+const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
   const {itemId} = useParams();
-    useEffect(() => {
-      const getItem = new Promise(resolve => {
-        setTimeout(()=>{
-            resolve(products)
-        },2000);
-      });
-      getItem.then(res => setItem(res.find(data => data.id===parseInt(itemId))));
-    },[itemId]);
-    return(
-        <ItemDetail item={item}/>
-    )
+  const [loading,setLoading] = useState(true);
+
+  useEffect(() => {
+    const db = getFirestore();
+    const response = doc(db, "items", itemId);
+    getDoc(response).then((snapShot) => {
+        if (snapShot.exists()) {
+            setItem({itemId:snapShot.itemId, ...snapShot.data()});
+            setLoading(false);
+        }            
+    });
+}, [itemId]);
+  return(
+    <div className="container">
+      {loading ? <Loading /> : <ItemDetail item={item} />}
+    </div>
+  )
 }
 export default ItemDetailContainer;

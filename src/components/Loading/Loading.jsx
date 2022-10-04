@@ -6,9 +6,9 @@ const Loading = () => {
         <div className="row">
             <div className="col-md-12 text-center p-5">
                 <p><img src={logo} alt="BurgerKing" width="180" /></p>
-                <div class="text-center">
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                <div className="text-center">
+                    <div className="spinner-border" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
                     <h3>Cargando...</h3>
                     <p>Por favor espere</p>
@@ -17,5 +17,4 @@ const Loading = () => {
         </div>
     )
 }
-
 export default Loading;
