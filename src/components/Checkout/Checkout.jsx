@@ -12,11 +12,10 @@ const Checkout = () => {
 
     const sendOrder = () => {
         if ((nombre !== "") && (email !== "") && (telefono !== "")) {
-            //Creo el objeto con los Datos del Comprador
             const buyer = {name:nombre, email:email, phone:telefono};
             const items = [];
             cart.forEach(item => { 
-                items.push({id:item.id, title:item.nombre, price:item.precio, quantity:item.cantidad});
+                items.push({id:item.id, title:item.title, price:item.price, quantity:item.cantidad});
             });
             const date = new Date();
             const now = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
@@ -34,19 +33,19 @@ const Checkout = () => {
             {cartTotal() > 0 ?
             <div className="row">
                 <div className="col-md-4 offset-md-2">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
+                        <div className="mb-3">
+                            <label for="nombre" className="form-label">Nombre</label>
+                            <input type="text" className="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
+                        <div className="mb-3">
+                            <label for="email" className="form-label">Email</label>
+                            <input type="text" className="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
                         </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
+                        <div className="mb-3">
+                            <label for="telefono" className="form-label">Teléfono</label>
+                            <input type="text" className="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
                         </div>
-                        <button type="button" class="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
+                        <button type="button" className="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
                 </div>
                 <div className="col-md-4">
                     <table className="table">
