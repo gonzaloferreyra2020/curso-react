@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { CartContext } from "../CartContext/CartContext";
-import { getFirestore, doc, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 import Success from "../Success/Success";
 
 const Checkout = () => {
@@ -21,7 +21,7 @@ const Checkout = () => {
             const now = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
             const order = {buyer:buyer, items:items, date:now, total:cartSuma()};
             const db = getFirestore();
-            const orderCollection =  doc(db, "orders");
+            const orderCollection =  collection(db, "orders");
             addDoc(orderCollection, order).then(({id}) => {
                 setOrderId(id);
                 clear();
@@ -34,15 +34,15 @@ const Checkout = () => {
             <div className="row">
                 <div className="col-md-4 offset-md-2">
                         <div className="mb-3">
-                            <label for="nombre" className="form-label">Nombre</label>
+                            <label htmlFor ="nombre" className="form-label">Nombre</label>
                             <input type="text" className="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
                         </div>
                         <div className="mb-3">
-                            <label for="email" className="form-label">Email</label>
+                            <label htmlFor ="email" className="form-label">Email</label>
                             <input type="text" className="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="mb-3">
-                            <label for="telefono" className="form-label">Teléfono</label>
+                            <label htmlFor ="telefono" className="form-label">Teléfono</label>
                             <input type="text" className="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
                         </div>
                         <button type="button" className="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
