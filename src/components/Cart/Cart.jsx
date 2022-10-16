@@ -2,12 +2,16 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 import carrito from "../../images/carrito.png";
-import trash from '../../images/cesto.png';
+import trash from '../../images/trash2.png';
 
 const Cart = () => {
     const {cart, removeItem, clear, cartTotal, cartSuma} = useContext(CartContext);
     return (
         <div className="container">
+            <div className="container text-center">
+                <h1>CARRITO DE COMPRAS</h1>
+            </div>
+            
             {cartTotal() > 0 ?
                 <table className="table">
                     <tbody>
@@ -34,13 +38,13 @@ const Cart = () => {
                             <td className="text-end fw-bold">${cartSuma()}</td>
                             <td className="text-end">
                                 <Link to={"/checkout"} title="Finalizar Compra">
-                                    <button className="btn fondo_naranja">Finalizar Compra <img src={carrito} alt="Finalizar Compra" width="16" /></button>
+                                    <button className="btn fondo_rojo">Finalizar Compra <img src={carrito} alt="Finalizar Compra" width="16" /></button>
                                 </Link>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            : <div className="alert alert-danger text-center" role="alert">No se encontraron Productos!</div>}
+            : <div className="alert alert-danger text-center" role="alert">Tu carrito está vacío!</div>}
         </div>
     )
 }

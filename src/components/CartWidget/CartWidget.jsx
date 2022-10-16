@@ -1,7 +1,7 @@
 import React , { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import cart from "../../images/carrito.png";
-import trash from '../../images/cesto.png';
+import trash from '../../images/trash2.png';
 import { CartContext } from "../CartContext/CartContext";
 
 const CartWidget = () => {

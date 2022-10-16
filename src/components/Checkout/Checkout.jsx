@@ -34,15 +34,15 @@ const Checkout = () => {
             <div className="row">
                 <div className="col-md-4 offset-md-2">
                         <div className="mb-3">
-                            <label htmlFor ="nombre" className="form-label">Nombre</label>
+                            <label htmlFor ="nombre" className="form-label">Nombre:</label>
                             <input type="text" className="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor ="email" className="form-label">Email</label>
+                            <label htmlFor ="email" className="form-label">Email:</label>
                             <input type="text" className="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor ="telefono" className="form-label">Teléfono</label>
+                            <label htmlFor ="telefono" className="form-label">Teléfono:</label>
                             <input type="text" className="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
                         </div>
                         <button type="button" className="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
@@ -65,7 +65,8 @@ const Checkout = () => {
                     </table>
                 </div>
             </div>
-            : orderId !== "" ? <Success id={orderId} /> : <div className="alert alert-danger text-center" role="alert">No se encontraron Productos!</div>}
+            : orderId !== "" ? <Success id={orderId} /> : <div className="alert alert-danger text-center" role="alert">Tu carrito está vacío!</div>}
+            
         </div>
     )
 }

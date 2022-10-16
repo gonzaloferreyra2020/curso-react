@@ -12,8 +12,8 @@ const   Footer = () =>{
                 <div className="col-md-2">
                     <h4>Info BK</h4>
                     <ul>
-                        <li className="nav-item">
-                            <NavLink to="products" className="nav-link active">Menú</NavLink> </li>
+                        <li className="nav-item lista_footer">
+                            <NavLink to="products" className="nav-link active ">Menú</NavLink> </li>
                         <li>
                             <NavLink to="" className="nav-link active">Home</NavLink> 
                         </li>
