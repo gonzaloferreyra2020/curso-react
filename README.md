@@ -5,4 +5,4 @@ Ecommerce que simula el sitio de pedidos de comidas de Burger King. Seleccionand
 
 Se puede ver el sitio por el siguiente link: https://react-app-burger.netlify.app/
 
-Librerias usadas: Boostrap
+Librerias usadas: Bootstrap
